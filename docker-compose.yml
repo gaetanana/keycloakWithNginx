@@ -26,8 +26,8 @@ services:
       KEYCLOAK_ADMIN_PASSWORD: admin
 
       KC_PROXY: edge
-      KC_HOSTNAME_ADMIN_URL: https://localhost/keycloak
-      KC_HOSTNAME_URL: https://localhost/keycloak
+      KC_HOSTNAME_ADMIN_URL: "https://${IP_ADDRESS}/keycloak"
+      KC_HOSTNAME_URL: "https://${IP_ADDRESS}/keycloak"
 
     volumes:
       - ./data/REALM:/opt/jboss/keycloak/import
